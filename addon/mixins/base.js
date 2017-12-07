@@ -104,7 +104,7 @@ Semantic.BaseMixin = Ember.Mixin.create({
 
   getSemanticModuleGlobal() {
     let moduleName = this.getSemanticModuleName();
-    return window.$.fn[moduleName];
+    return Ember.$.fn[moduleName];
   },
 
   willInitSemantic(settings) { // jshint ignore:line
